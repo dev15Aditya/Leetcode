@@ -6,15 +6,31 @@ public class buySellStock {
         System.out.println(maxProfit(prices));
     }
 
-    static int maxProfit(int[] prices){ 
-        int minPrice = Integer.MAX_VALUE;
-        int maxProfit = 0;
+    // static int maxProfit(int[] prices){ 
+    //     int minPrice = Integer.MAX_VALUE;
+    //     int maxProfit = 0;
 
-        for(int i = 0; i<prices.length; i++){
-            if(prices[i] < minPrice) 
-                minPrice = prices[i];
-            else if(prices[i] - minPrice > maxProfit) 
-                maxProfit = prices[i] - minPrice;
+    //     for(int i = 0; i<prices.length; i++){
+    //         if(prices[i] < minPrice) 
+    //             minPrice = prices[i];
+    //         else if(prices[i] - minPrice > maxProfit) 
+    //             maxProfit = prices[i] - minPrice;
+    //     }
+    //     return maxProfit;
+    // }
+    static int maxProfit(int[] prices){
+        int l = 0, r = 1;
+        int maxProfit = 0;
+        int profit = 0;
+
+        while(r<prices.length){
+            if(prices[l] < prices[r]){
+                profit = prices[r] - prices[l];
+                maxProfit = Math.max(maxProfit, profit);
+            }
+            else l = r;
+
+            r++;
         }
         return maxProfit;
     }
