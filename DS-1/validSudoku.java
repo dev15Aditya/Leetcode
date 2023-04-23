@@ -17,8 +17,9 @@ public class validSudoku {
         System.out.println(isValidSudoku(board));
     }
 
-    public static boolean isValidSudoku(char[][] board) { 
-        Set seen = new HashSet();
+    public static boolean isValidSudoku(char[][] board) {
+        Set seen = new HashSet<>();
+
         for (int i = 0; i < 9; ++i) {
             for (int j = 0; j < 9; ++j) {
                 char number = board[i][j];
