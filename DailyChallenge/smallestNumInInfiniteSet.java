@@ -44,7 +44,6 @@ public class smallestNumInInfiniteSet {
         int[][] inp2 = { {}, { 2 }, {}, {}, {}, { 1 }, {}, {}, {} };
 
         smallestNumInInfiniteSet obj = new smallestNumInInfiniteSet();
-        // print null also in output
         for (int i = 0; i < inp.length; i++) {
             if (inp[i].equals("SmallestInfiniteSet")) {
                 System.out.println("null");
