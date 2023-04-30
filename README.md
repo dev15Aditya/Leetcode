@@ -1,5 +1,8 @@
-# Leetcode
-# There is 2 week challenge on leetcode in problem section. 
-# This focus in recalling Data Structure concepts.
-# It is not for complete beginners.
-# Each day you can solve 2 questions, for a given topic.
+Start date: 23 April 2023
+
+I tried to it before also but I broke.
+In this repo I will daily try to solve and maintain lettcode streak
+
+streak brok on 24 April
+Started again on 25 April. Still going Day4🚀
+Succesfully🚀 6🔥 made.
