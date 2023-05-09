@@ -4,6 +4,8 @@ public class subStringMaxVowels {
     public static void main(String[] args) {
         String s = "abciiidef";
         int k = 3;
+
+        System.out.println(maxVowels(s, k));
     }
 
     public static int maxVowels(String s, int k) {
