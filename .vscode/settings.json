@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.html": "html",
+    "*.java": "java",
+    "*.sql": "sql",
+    "iostream": "cpp"
+  }
+}
