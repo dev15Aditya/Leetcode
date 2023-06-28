@@ -40,4 +40,34 @@ public class pascalTriangle {
 
         return res;
     }
+
+    public static Node findUnion(Node head1, Node head2) {
+        Node head = new Node(-1);
+        Node temp = head;
+        while (head1 != null && head2 != null) {
+            if (head1.data < head2.data) {
+                temp.next = head1;
+                head1 = head1.next;
+            } else if (head1.data > head2.data) {
+                temp.next = head2;
+                head2 = head2.next;
+            } else {
+                temp.next = head1;
+                head1 = head1.next;
+                head2 = head2.next;
+            }
+            temp = temp.next;
+        }
+        while (head1 != null) {
+            temp.next = head1;
+            head1 = head1.next;
+            temp = temp.next;
+        }
+        while (head2 != null) {
+            temp.next = head2;
+            head2 = head2.next;
+            temp = temp.next;
+        }
+        return head.next;
+    }
 }
